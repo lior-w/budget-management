@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 @RequestMapping("/api/v1")
 public class BudgetController {
 
-    @GetMapping("/echo/{str}")
+    @GetMapping("/hi")
 
-    public ResponseEntity<String> seyHello(@PathVariable("str") String str) {
+    public ResponseEntity<String> Hi() {
 
-        return ResponseEntity.ok("your word: " + str);
+        return ResponseEntity.ok("hi");
     }
 }
